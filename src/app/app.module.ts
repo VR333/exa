@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { HeaderComponent } from './header/app.component';
+import { HeaderBookmarkComponent } from './header/bookmark/app.component';
 
 
 import { AppComponent } from './app.component';
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeaderBookmarkComponent
   ],
   imports: [
     BrowserModule

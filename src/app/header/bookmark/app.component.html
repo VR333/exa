@@ -1,0 +1,23 @@
+<div class='header-tooltip'>
+	Medical Rebates
+	<span class='arrow'>˅</span>
+
+	<ul class='tooltiptext move-left'>
+		<li class="tooltip-option"
+			*ngFor="let company of companies">{{company.name}}
+		</li>
+	</ul>
+</div>
+
+<span class='vertical-line'>|</span>
+
+<div class='header-tooltip'>
+	Pharma 1
+	<span class='arrow'>˅</span>
+
+	<ul class='tooltiptext move-right'>
+		<li class="tooltip-option"
+			*ngFor="let company of companies">{{company.name}}
+		</li>
+	</ul>
+</div>
