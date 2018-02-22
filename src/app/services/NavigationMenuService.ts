@@ -6,6 +6,5 @@ export class NavigationMenuService {
 
     moveMenu() {
         this.toggle = !this.toggle;
-		console.log(this.toggle);
     }
 }

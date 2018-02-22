@@ -1,0 +1,38 @@
+:host {
+	display: inline-block;
+	position: relative;
+	color: grey;
+	background-color: transparent;
+	margin: 0 20px;
+
+	.option {
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		margin-top: 30px;
+		display: block;
+		border: 2px solid grey;
+		border-radius: 50%;
+		color: grey;
+		text-decoration: none;
+		text-align: center;
+
+		&:hover {
+			color: whire;
+			background-color: black;
+			border-color: white;
+
+			& .icon {
+				color: white;
+			}
+		}
+	}
+
+	.first {
+		margin: 0px;
+	}
+
+	.rotate {
+		transform: rotate(90deg);
+	}
+}

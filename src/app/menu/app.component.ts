@@ -2,12 +2,10 @@ import { Component } from '@angular/core';
 import { NavigationMenuService } from './../services/NavigationMenuService';
 
 @Component({
-  selector: 'exa-navigation',
+  selector: 'exa-menu',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class NavigationComponent {
-    path = 'Make some dynamic string here!';
-
+export class MenuComponent {
     constructor(private navigationMenu: NavigationMenuService) {}
 }
