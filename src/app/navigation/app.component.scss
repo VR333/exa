@@ -1,0 +1,11 @@
+:host {
+	line-height: 70px;
+	display: block;
+	color: grey;
+	background-color: transparent;
+
+	.navigation-btn {
+		margin: 0 30px;
+		cursor: pointer;
+	}
+}

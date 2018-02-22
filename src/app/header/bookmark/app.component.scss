@@ -48,13 +48,12 @@
 			font-size: 0.5em;
 		}
 
-		&:hover .tooltiptext {
+		&:hover .tooltip-box {
             transition-timing-function: ease-in;
             visibility: visible;
         }
 
-        /* Tooltip text */
-         .tooltiptext {
+         .tooltip-box {
             visibility: hidden;
             width: 150px;
 			color: black;
