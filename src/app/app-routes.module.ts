@@ -9,12 +9,14 @@ import { DatabaseComponent } from './main/database/app.component';
 import { UploadComponent } from './main/upload/app.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'speed', pathMatch: 'full' },
   { path: 'speed', component: SpeedComponent },
   { path: 'search', component: SearchComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'briefcase', component: BriefCaseComponent },
   { path: 'database', component: DatabaseComponent },
-  { path: 'upload', component: UploadComponent }
+  { path: 'upload', component: UploadComponent },
+  { path: '**', redirectTo: 'speed' }
 ];
 
 @NgModule({

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
+
 import { NavigationButtonClick } from './../services/NavigationButtonClick';
-import { MenuButtonClick } from './../services/MenuButtonClick';
 
 @Component({
   selector: 'exa-navigation',
@@ -8,10 +10,15 @@ import { MenuButtonClick } from './../services/MenuButtonClick';
   styleUrls: ['./app.component.scss']
 })
 export class NavigationComponent {
-    path = this.menuButtonClick.path;
+    path: string;
 
     constructor(
         private navigationButtonClick: NavigationButtonClick,
-        private menuButtonClick: MenuButtonClick
-    ) {}
+        private location: Location,
+        private router: Router
+    ) {
+        router.events.forEach( () => {
+            this.path = location.path().split('/').join('').replace(/(^|\s)\S/g, l => l.toUpperCase());
+        });
+    }
 }

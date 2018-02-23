@@ -25,7 +25,8 @@
 	cursor: default;
 
 	.vertical-line {
-		padding: 0 5px;
+		color: #A9A9A9;
+		padding: 0 10px 0 16px;
 		font-size: 0.7em;
 	}
 
@@ -44,8 +45,17 @@
 		cursor: pointer;
 		position: relative;
 
-		.arrow {
-			font-size: 0.5em;
+		.add-arrow {
+			position: relative;
+
+			&::after {
+				content: '̬';
+				position: absolute;
+				right: -7px;
+    			top: -22px;
+				font-size: 22px;
+				color: #A9A9A9;
+			}
 		}
 
 		&:hover .tooltip-box {
@@ -87,15 +97,15 @@
          }
 
 		 .move-right {
-			 left: -8px;
+			 left: -14px;
 
 			 &::before {
- 				left: 70px;
+ 				left: 85px;
  			}
 		 }
 
 		 .move-left {
-			 right: -12px;
+			 right: -21px;
 
 			 &::before {
  				right: 9px;

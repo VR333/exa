@@ -1,9 +1,9 @@
 <div class='wrapper' [ngClass]="{ 'toLeft': navigationButtonClick.shouldMoveMenu }">
-	<a href="#"
+	<a routerLink="{{icon.link}}"
 	   class='option'
 	   *ngFor="let icon of icons"
-	   [ngClass]="{ 'rotate' : icon.name === 'Search', 'active' : icon.active}"
-	   (click)="handleClick(icon)"
+	   [routerLinkActive]="['active']"
+	   [ngClass]="{ 'rotate' : icon.name === 'Search'}"
 	>
 		<i [ngClass]="['icon', icon.class]"></i>
 	</a>
