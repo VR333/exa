@@ -25,9 +25,9 @@
 	cursor: default;
 
 	.vertical-line {
-		color: #A9A9A9;
+		color: grey;
 		padding: 0 10px 0 16px;
-		font-size: 0.7em;
+		font-size: 12px;
 	}
 
 	&::before {
@@ -54,7 +54,7 @@
 				right: -7px;
     			top: -22px;
 				font-size: 22px;
-				color: #A9A9A9;
+				color: grey;
 			}
 		}
 
