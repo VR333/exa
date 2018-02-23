@@ -1,9 +1,11 @@
-:host {
-	display: inline-block;
-	position: relative;
-	color: grey;
-	background-color: transparent;
-	margin: 0 20px;
+.wrapper {
+	width: 80px;
+    padding-left: 20px;
+	position: absolute;
+	left: 0px;
+	transition: left .4s;
+    color: grey;
+    background-color: transparent;
 
 	.option {
 		height: 40px;
@@ -35,4 +37,8 @@
 	.rotate {
 		transform: rotate(90deg);
 	}
+}
+
+.toLeft {
+	left: -80px;
 }

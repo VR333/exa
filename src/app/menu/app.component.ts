@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavigationMenuService } from './../services/NavigationMenuService';
+import { NavigationButtonClick } from './../services/NavigationButtonClick';
 
 @Component({
   selector: 'exa-menu',
@@ -7,5 +7,5 @@ import { NavigationMenuService } from './../services/NavigationMenuService';
   styleUrls: ['./app.component.scss']
 })
 export class MenuComponent {
-    constructor(private navigationMenu: NavigationMenuService) {}
+    constructor(private navigationButtonClick: NavigationButtonClick) {}
 }

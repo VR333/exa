@@ -1,12 +1,13 @@
-:host {
-	position: relative;
-    top: 13px;
-	width: calc(98% - 84px);
+.wrapper {
 	height: 390px;
 	padding-left: 5%;
-	margin-right: 2%;
-	display: inline-block;
-	position: relative;
+	margin: 0 2% 0 80px;
+	transition: margin .4s;
+	display: block;
 	background-color: white;
 	box-shadow: 0px 0px 20px rgb(200, 200, 200);
+}
+
+.toLeft {
+	margin: 0 2% 0 0;
 }

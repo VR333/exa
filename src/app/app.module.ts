@@ -17,7 +17,7 @@ import { BriefCaseComponent } from './main/briefcase/app.component';
 import { DatabaseComponent } from './main/database/app.component';
 import { UploadComponent } from './main/upload/app.component';
 
-import { NavigationMenuService } from './services/NavigationMenuService';
+import { NavigationButtonClick } from './services/NavigationButtonClick';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { NavigationMenuService } from './services/NavigationMenuService';
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [NavigationMenuService],
+  providers: [NavigationButtonClick],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
