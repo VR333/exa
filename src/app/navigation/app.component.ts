@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationButtonClick } from './../services/NavigationButtonClick';
+import { MenuButtonClick } from './../services/MenuButtonClick';
 
 @Component({
   selector: 'exa-navigation',
@@ -7,7 +8,10 @@ import { NavigationButtonClick } from './../services/NavigationButtonClick';
   styleUrls: ['./app.component.scss']
 })
 export class NavigationComponent {
-    path = 'Make some dynamic string here!';
+    path = this.menuButtonClick.path;
 
-    constructor(private navigationButtonClick: NavigationButtonClick) {}
+    constructor(
+        private navigationButtonClick: NavigationButtonClick,
+        private menuButtonClick: MenuButtonClick
+    ) {}
 }

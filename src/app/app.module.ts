@@ -18,6 +18,7 @@ import { DatabaseComponent } from './main/database/app.component';
 import { UploadComponent } from './main/upload/app.component';
 
 import { NavigationButtonClick } from './services/NavigationButtonClick';
+import { MenuButtonClick } from './services/MenuButtonClick';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,10 @@ import { NavigationButtonClick } from './services/NavigationButtonClick';
     BrowserModule,
     AppRoutingModule,
   ],
-  providers: [NavigationButtonClick],
+  providers: [
+      NavigationButtonClick,
+      MenuButtonClick
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

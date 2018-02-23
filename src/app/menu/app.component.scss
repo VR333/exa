@@ -20,7 +20,7 @@
 		text-align: center;
 
 		&:hover {
-			color: whire;
+			color: white;
 			background-color: black;
 			border-color: white;
 
@@ -30,12 +30,22 @@
 		}
 	}
 
-	.first {
+	a:first-child {
 		margin: 0px;
 	}
 
 	.rotate {
 		transform: rotate(90deg);
+	}
+
+	.active {
+		color: white;
+		background-color: black;
+		border-color: white;
+
+		& .icon {
+			color: white;
+		}
 	}
 }
 
