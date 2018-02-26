@@ -1,7 +1,6 @@
 @mixin before-after-style($degree) {
 	height: 59px;
 	content: "";
-	display: inline-block;
 	position: absolute;
 	top: -16px;
 	border-left: 1px solid white;
